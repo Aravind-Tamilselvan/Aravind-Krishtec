@@ -1,0 +1,118 @@
+.contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+
+    h1 {
+        margin-bottom: 100px;
+        font-size: 50px;
+    }
+
+    button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        background-color: rgba(65, 65, 250);
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        box-shadow: 0 0 25px rgba(65, 65, 250);
+    }
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-tags {
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr); */
+    grid-template-areas: "fname email"
+        "number subject"
+        "textarea textarea";
+    gap: 5px 5px;
+    border: none;
+}
+
+.input-tags input {
+    width: 25vw;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: rgba(65, 65, 250);
+    background: transparent;
+    color: white;
+
+
+}
+
+.fname {
+    grid-area: fname;
+}
+
+.email {
+    grid-area: email;
+}
+
+.number {
+    grid-area: number;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+#textarea {
+    grid-area: textarea;
+}
+
+textarea {
+    /* width: min(50vw, 806px); */
+    resize: none;
+    height: 20vh;
+    margin: 10px 0;
+    border-radius: 10px;
+    border-color: rgba(65, 65, 250);
+    background: transparent;
+    padding: 10px;
+    color: white;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    background: transparent
+}
+
+@media screen and (max-width:480px){
+    .contact{
+        padding: 100px 0;
+        h1{
+            font-size: 24px;
+        }
+    }
+}

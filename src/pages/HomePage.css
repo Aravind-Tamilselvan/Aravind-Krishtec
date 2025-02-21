@@ -1,0 +1,135 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    cursor: default;
+}
+
+.home img {
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgb(69, 69, 250);
+    transition: 0.4s;
+    cursor: pointer;
+    margin-right: 50px;
+    background-size: cover;
+}
+
+.profile-img:hover {
+    box-shadow: 0 0 25px rgb(69, 69, 250), 0 0 35px rgb(69, 69, 250), 0 0 45px rgb(69, 69, 250);
+}
+
+.content {
+    text-align: left;
+    color: white;
+
+    h3 {
+        font-weight: 500;
+        font-size: 25px;
+        margin-bottom: 3px;
+    }
+
+    h1 {
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 3px;
+    }
+
+    p {
+        width: 500px;
+        text-wrap: wrap;
+    }
+}
+
+.icons {
+    margin-top: 10px;
+
+    .bttn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 2px solid rgb(69, 69, 250);
+        background: transparent;
+        color: rgb(69, 69, 250);
+        margin: 7px 5px;
+        transition: 0.3s;
+        
+    }
+
+    .bttn i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .bttn:hover {
+        transform: scale(1.1) translateY(-10px);
+        background-color: rgb(69, 69, 250);
+        color: white;
+        box-shadow: 0 0 25px rgb(69, 69, 250);
+    }
+
+    button {
+        background-color: rgb(69, 69, 250);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        font-size: 15px;
+        margin-left: 25%;
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        box-shadow: 0 0 25px rgb(69, 69, 250);
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .profile-img{
+        margin-left: 40px;
+    }
+
+    .content{
+        text-align: center;
+
+        h1{
+            font-size: 18px;
+        }
+
+        h3{
+           font-size: 14px; 
+        }
+
+        p{
+            font-size: 16px;
+            width: 300px;
+        }
+    }
+
+    .icons{
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
